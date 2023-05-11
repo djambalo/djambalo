@@ -1,0 +1,45 @@
+header {
+    background-image: url("../asset/images/brownimages.jpg");
+    color: black;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+nav {
+
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: peachpuff;
+height: 50px;
+}
+nav a {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    align-self: center;
+}
+a:hover {
+    color: black;
+    background-color: white;
+} 
+#banner-text{
+    font-size: 75px;
+    text-shadow: 2px 2px gray;
+    text-align: center;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+.container {
+display: grid;
+align-items: center;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 5px;
+}
+
