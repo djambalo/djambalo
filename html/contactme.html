@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+        form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1em;
+        margin-left: 30%;
+        margin-right: 30%;
+        }
+    </style>
 </head>
 <body>
     <header> 
@@ -18,11 +27,11 @@
         <a href="worksamples.html">work samples</a>
         <a href="contactme.html">Contact Me</a>
     </nav>
-    <h2>Resume</h2>
-    
+    <h2></h2>
+
 
     <h3>Contact Me</h3>
-    <form action=""></form>
+    <form action="">
         <label for="name">Name</label>
         <input type="text" id="name" name="name">
         <label for="email">Email</label>
@@ -30,8 +39,9 @@
         <label for="message">Message:</label>
         <textarea name="message" id="message"></textarea>
         <input type="submit" value="send">
-    </form> 
 
+    </form> 
+    
     <footer>
         <p>&copy;2023 My Portfolio.</p>
     </footer>
