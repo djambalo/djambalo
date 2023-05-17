@@ -8,7 +8,30 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <style>
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width:100%;
+        align-items: center;
+        
+    }
     
+    img{
+        width: 70%;
+        height: 35%;
+        }
+    
+    #text {
+        font-size: 35px;
+        padding-left: 30px;
+        padding-top: 10%;
+        
+    }
+    span{
+        color: peachpuff;
+
+    }
 </style>
 <body>
     <header> 
@@ -21,15 +44,27 @@
         <a href="html/worksamples.html">work samples</a>
         <a href="html/contactme.html">Contact Me</a>
     </nav>
-    <h2 id="Home">Welcome to My Portfolio</h2>
-    <p>I'm a web designer and developer. I create beautiful, functional websites that 
-        help businesses and organizations grow
-    </p>
-
     
-   
+    <h2 id="Home">Welcome to My Portfolio</h2>
+
+    <div id="container">
+        <div class="big">
+            <div id="text">
+                <p>I'm <span>Laura</span> <br>
+                    I create beautiful, <br>functional websites that <br>
+                    help businesses and organizations grow.
+                </p>
+            </div>
+        </div>
+        <div class="big">
+            <div id="image">
+                <img src="asset/images/Screenshot 2023-05-17 at 10.23.43 AM copy.png" alt="girl picture">
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy;2023 My Portfolio.</p>
+        <p class="footer">&copy;2023 My Portfolio.</p>
     </footer>
     
 </body>

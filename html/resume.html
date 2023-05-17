@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laura's Portfolio</title>
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+        .cv{
+            display: inline-block;
+            color: black;
+            background-color: peachpuff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header> 
-        <h1>Laura's Portfolio</h1>
+        <h1 id="banner-text">Laura's Portfolio</h1>
     </header>
     <nav>
         <a href="../index.html">Home</a>
@@ -19,21 +27,13 @@
         <a href="contactme.html">Contact Me</a>
     </nav>
     <h2>Resume</h2>
+    <a href="../asset/images/Draft 3 RESUME.docx" download class="cv">Download Resume</a>
+    <a href="../asset/images/final Cover letter.docx" download class="cv">Download Cover Letter</a>
+
     
 
-    <h3>Contact Me</h3>
-    <form action=""></form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea name="message" id="message"></textarea>
-        <input type="submit" value="send">
-    </form> 
-
     <footer>
-        <p>&copy;2023 My Portfolio.</p>
+        <p class="footer" >&copy;2023 My Portfolio.</p>
     </footer>
 </body>
 </html>

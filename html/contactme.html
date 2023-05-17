@@ -4,21 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laura's Portfolio</title>
     <link rel="stylesheet" href="../css/index.css">
     <style>
-        form{
-        display: flex;
-        flex-direction: column;
-        row-gap: 1em;
-        margin-left: 30%;
-        margin-right: 30%;
+        #contact{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 50%;
+        }
+        .contact-left{
+            font: 1em sans-serif;
+            font-size: medium;
+            flex-basis: 35%;
+            padding-left: 20%;
+        }
+        .contact-right{
+            flex-basis: 60%;
+            padding-left: 40%;
+            padding-right: 0%;
+        }
+        .cv{
+            display: inline-block;
+            background-color: peachpuff;
+            text-decoration: none;
+        }
+        .contact-right form{
+            width: 200%;
+        
+        }
+        form input, form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 18px;
+            border-radius: 16px;
+
         }
     </style>
 </head>
 <body>
     <header> 
-        <h1>Laura's Portfolio</h1>
+        <h1 id="banner-text">Laura's Portfolio</h1>
     </header>
     <nav>
         <a href="../index.html">Home</a>
@@ -29,21 +59,29 @@
     </nav>
     <h2></h2>
 
-
-    <h3>Contact Me</h3>
-    <form action="">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email">
-        <label for="message">Message:</label>
-        <textarea name="message" id="message"></textarea>
-        <input type="submit" value="send">
-
-    </form> 
     
+    <div id="contact">
+        <div class="contact-left">
+            <h3>Contact Me</h3>
+            <p>laura_ngandjangola@stu.indianhills.edu</p>
+            <p>(470) 413-6442</p>
+            <a href="" class="cv">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"  required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  required>
+                <label for="message">Message:</label>
+                <textarea name="message" row="6" id="message" required></textarea>
+                <input type="submit" class="cv" value="send">
+            </form> 
+        </div>
+    </div>
+
     <footer>
-        <p>&copy;2023 My Portfolio.</p>
+        <p class="footer">&copy;2023 My Portfolio.</p>
     </footer>
 </body>
 </html>

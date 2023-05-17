@@ -4,12 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Laura's Portfolio</title>
     <link rel="stylesheet" href="../css/index.css">
+    <style>
+        img{
+            height: 250px;
+            object-fit: contain;
+        }
+        .project-card{
+            width: 400px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid peachpuff;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        .project-info{
+            display: flex;
+            justify-content: space-around;
+        }
+        #project-list{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1em;
+            justify-items: center;
+        }
+        @media (min-width: 480px) {
+            #projrct-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 700px) {
+            #project-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <header> 
-        <h1>Laura's Portfolio</h1>
+        <h1 id="banner-text">Laura's Portfolio</h1>
     </header>
     <nav>
         <a href="../index.html">Home</a>
@@ -21,18 +57,37 @@
     <h2>work Samples</h2>
 
     <h3>Project</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>Description</th>
-                <th>Link</th>
-            </tr>
-        </thead>
-    </table>
+    
+    
+    <div id="project-list">
+        <div class="project-card">
+            <img src="../asset/images/Screenshot (1).png" alt="projet picture">
+            <div class="projet-info">
+                <P></P>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="../asset/images/Screenshot (2).png" alt="projet picture">
+            <div class="projet-info">
+                <P></P>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="../asset/images/Screenshot (3).png" alt="projet picture">
+            <div class="projet-info">
+                <p></p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="../asset/images/Screenshot (4).png" alt="projet picture">
+            <div class="projet-info">
+                <p></p>
+            </div>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy;2023 My Portfolio.</p>
+        <p class="footer">&copy;2023 My Portfolio.</p>
     </footer>
 </body>
 </html>

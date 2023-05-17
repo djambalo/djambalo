@@ -36,10 +36,16 @@ h2{
     display: flex;
     justify-content: center;
 }
-.container {
-display: grid;
-align-items: center;
-grid-template-columns: 1fr 1fr 1fr;
-column-gap: 5px;
-}
 
+body{
+    background: #080808;
+    color: #fff;
+}
+footer{
+    height: 50px;
+    background-color: peachpuff;
+}
+.footer{
+    margin-left: 15px;
+    color: #080808;
+}
