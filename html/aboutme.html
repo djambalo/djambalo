@@ -13,22 +13,32 @@
         width: 50%;
         height: 55%;
         }
+        
+        .class{
+            display: grid;
+            grid-template-rows: 1fr
+                                1fr;
+        }
         #blog-post{
-            display: flex;
-            margin-right: auto;
-            margin: auto;
-            margin-bottom: 50px;
-            width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1em;
+        justify-items: center;
+        }
+        @media (min-width: 480px){
+            #blog-post{
+                grid-template-columns: 1fr 1fr ;
+                gap: 20px;
+                width:100%;
+                align-items: center;
+            }
         }
         div{
-            border: 0px solid peachpuff;
-            background-color: black;
-            padding: 10px;
+            padding-left: 20px;
         }
         #text{
-        font-size: 25px;
+            font-size: 25px;
         }
-
     </style>
 </head>
 <body>
@@ -44,22 +54,31 @@
     </nav>
     
     <h2>About me</h2>
-    <div id="blog-post">
-        <div>
-            <p id="text">Hi, I'm Laura Ngandjangola,<br> and I've been designing and developing websites for one years.
-            I have experience in HTML,CSS, and JavaScript. <br>I'm passionate about creating user-friendly, 
-            accessible websites that make a difference.
-            </p>
-            <img src="../asset/images/IMG_9161.jpg" alt="pic of a girl">
-            <p id="text">Skills</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>Bootstrap</li>
-            </ul>
+    <div class="contient">
+        <div id="blog-post">
+            <div>
+                <p id="text">Hi, I'm Laura Ngandjangola,<br> a web designer based in Ottumwa, IA.<br>
+                    I've been designing and developing websites for a while now.I have experience in HTML,CSS, and JavaScript. <br>
+                    I'm passionate about creating user-friendly Websites that provide an excellent user experience and <br> 
+                    accessible websites that make a difference.
+                </p>
+            </div>
+            <div>
+                <img src="../asset/images/IMG_9161.jpg" alt="pic of a girl">
+            </div>
         </div>
+
+            <p id="text">My goal is to provide my clients with websites that are not only <br>
+                visually appealling but also meet their business needs.
+                I believe that every website should be unique and reflect the client's brand and personality.</p>
+            <p id="text">My design philosophy is to keep it simple, clean, and elegant.<br>
+                I believe that less is more and that a website should be easy to navigate and understand.<br>
+                </p>
+            <p id="text"> When I'm not  designing websites, I enjoy drawing and painting, 
+                I also enjoy reading about how the human mind works and I love to travel
+                and explore new places.
+            </p>
+            <p id="text">If you have any questions or would like to discuss a project, feel free to contact me.</P>
     </div>
 
     <footer>

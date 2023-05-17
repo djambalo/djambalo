@@ -8,30 +8,35 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <style>
-    #container {
+    #container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        width:100%;
-        align-items: center;
-        
+        grid-template-columns: 1fr;
+        gap: 1em;
+        justify-items: center;
     }
-    
+
+    @media (min-width: 480px){
+        #container {
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width:100%;
+            align-items: center;
+        }
+    }
     img{
         width: 70%;
         height: 35%;
         }
-    
     #text {
         font-size: 35px;
         padding-left: 30px;
         padding-top: 10%;
-        
     }
     span{
         color: peachpuff;
 
     }
+    
 </style>
 <body>
     <header> 
@@ -44,7 +49,8 @@
         <a href="html/worksamples.html">work samples</a>
         <a href="html/contactme.html">Contact Me</a>
     </nav>
-    
+    <!-- In my home page , I did a small introduction about me and add a picture-->
+    <!-- and style in css-->
     <h2 id="Home">Welcome to My Portfolio</h2>
 
     <div id="container">
